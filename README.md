@@ -46,7 +46,7 @@ Laravel Weather API es una aplicación RESTful desarrollada en Laravel que ofrec
 1. **Clonar el Repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/laravel-weather-api.git
+   git clone https://github.com/jgsr12/weather_pulpo_line.git
    cd laravel-weather-api
 
 2. **Instalar Dependencias:**
