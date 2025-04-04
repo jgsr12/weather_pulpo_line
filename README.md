@@ -59,7 +59,7 @@ Copia el archivo de ejemplo .env.example a .env:
 
 cp .env.example .env
 
-Edita el archivo .env y configura:
+4. **Edita el archivo .env y configura:**
 
 Base de datos: DB_CONNECTION, DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD
 
@@ -71,12 +71,12 @@ Generar la Clave de la Aplicación:
 
 php artisan key:generate
 
-Ejecutar Migraciones y Seeders:
+5. **Ejecutar Migraciones y Seeders:**
 
 php artisan migrate
 php artisan db:seed
 
-Ejecución del Proyecto
+## Ejecución del Proyecto
 
 Levantar el Servidor:
 
@@ -127,8 +127,6 @@ Header: Authorization: Bearer {{auth_token}}
 POST {{base_url}}/favorites
 Body (raw, JSON):
 
-json
-Copiar
 { "city": "Paris" }
 GET {{base_url}}/favorites
 Header: Authorization: Bearer {{auth_token}}
@@ -136,8 +134,12 @@ Header: Authorization: Bearer {{auth_token}}
 GET {{base_url}}/admin/searches
 Solo accesible para usuarios con rol admin (usa un token obtenido al hacer login con un usuario que tenga asignado el rol "admin").
 
-Pruebas Unitarias y de Integración
+## Pruebas Unitarias y de Integración
 
 El proyecto incluye tests utilizando PHPUnit. Para ejecutarlos, en la raíz del proyecto ejecuta:
 
 php artisan test
+
+## Documentación Swagger
+
+http://127.0.0.1:8000/api/documentation o por el puerto en que corra la aplicación
